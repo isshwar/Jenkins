@@ -4,12 +4,12 @@ pipeline {
         stage ('Initialize') {
             steps {
                 echo  "Initializing the Code File"
+                pwd
             }
         }
  
         stage ('Build') {
             steps {
-                sh 'make'
                 echo 'Hello World'
             }
         }
