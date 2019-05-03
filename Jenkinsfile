@@ -4,13 +4,13 @@ pipeline {
         stage ('Initialize') {
             steps {
                 echo  "Initializing the Code File"
-                sh 'pwd'
+                sh 'cd java-maven-junit-helloworld-master'
             }
         }
  
         stage ('Build') {
             steps {
-                echo 'Hello World'
+                sh 'mvn clean package'
             }
         }
  
