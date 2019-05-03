@@ -4,7 +4,7 @@ pipeline {
         stage ('Initialize') {
             steps {
                 echo  "Initializing the Code File"
-                pwd
+                sh 'pwd'
             }
         }
  
